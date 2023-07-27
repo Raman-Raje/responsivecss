@@ -8,12 +8,6 @@ import NotFound from './components/common/notFound/NotFound';
 // themContainer Toastify
 import ToastContainerNotify from './components/common/toast/ToastContainerNotify';
 
-const roles = {
-   admin: "ADMIN",
-   doctor: "DOCTOR",
-   user: "USER",
-}
-
 const App = () => {
    return (
       <>
