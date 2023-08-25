@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1000px) {
+  .stats-main-container {
+    width: 90%;
+  }
+  .stats-container {
+    display: block !important;
+  }
+  .stats-img-container {
+    height: 80px !important;
+  }
+}

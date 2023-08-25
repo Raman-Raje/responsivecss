@@ -1,0 +1,69 @@
+.navbar {
+  /* Default styles */
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.navbar.scrolled {
+  /* Styles when scrolled */
+  background-color: #f5f5f5; /* Change to your desired color */
+  color: #000 !important;
+}
+
+.fill-btn {
+  position: relative;
+  letter-spacing: 2px;
+  color: #209e8a;
+  border: 2px #209e8a solid;
+  border-radius: 4px;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.fill-btn:hover {
+  color: whitesmoke;
+}
+
+.fill-btn:before {
+  content: "";
+  position: absolute;
+  background: #209e8a;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill-btn:hover:before {
+  top: 0;
+}
+.about-link {
+  margin-right: 25px !important;
+}
+@media only screen and (max-width: 1000px) {
+  .fill-btn {
+    padding: 4px 7px !important;
+    margin-right: 0 !important;
+  }
+  .logo {
+    font-size: 1.25rem !important;
+  }
+  .navbar {
+    padding: 0 5% !important;
+  }
+  .about-link {
+    font-size: 1rem;
+    margin-right: 3px !important;
+  }
+}

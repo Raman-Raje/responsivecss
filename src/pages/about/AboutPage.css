@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1000px) {
+  .about-title,
+  .about-desc {
+    width: 90% !important;
+  }
+  .about-title-container {
+    padding-top: 10vh;
+    margin-top: 0 !important;
+  }
+  .about-text {
+    margin-top: 0 !important;
+    font-size: 1.5rem;
+  }
+  .about-sub-text {
+    font-size: 1.25rem;
+  }
+}

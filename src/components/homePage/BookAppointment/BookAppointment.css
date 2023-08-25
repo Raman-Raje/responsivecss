@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1000px) {
+  .book-appointment {
+    width: 90% !important;
+    display: block !important;
+  }
+  .book-img-container {
+    width: 100% !important;
+  }
+  .book-desc-container {
+    width: 100% !important;
+  }
+}

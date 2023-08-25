@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1000px) {
+  .team-container {
+    width: 90% !important;
+    text-align: center !important;
+  }
+  .teams-container {
+    display: block !important;
+  }
+  .team-card {
+    width: 90% !important;
+    margin: 20px auto !important;
+  }
+}
