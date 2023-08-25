@@ -1,0 +1,88 @@
+.contact-form {
+  background-image: url(../../../assets/mapTemp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: end;
+  width: 50%;
+  padding: 10px 25px;
+  border-radius: 10px 0 0 10px;
+}
+.contact-form::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 50%; /* Adjust as needed for triangle position */
+  transform: translateY(-90%) rotate(0deg); /* Rotate to face inward */
+  border-width: 25px;
+  border-style: solid;
+  border-color: transparent #17b67f transparent transparent;
+}
+
+.fill-btn {
+  position: relative;
+  letter-spacing: 2px;
+  color: #209e8a;
+  border: 2px solid white !important;
+  border-radius: 4px;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.fill-btn:hover {
+  color: whitesmoke;
+}
+
+.fill-btn:before {
+  content: "";
+  position: absolute;
+  background: #17b67f;
+  color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill-btn:hover:before {
+  top: 0;
+}
+.social-icons {
+  font-size: 30px !important;
+  color: #17b67f;
+}
+
+.social-icons:hover {
+  font-size: 30px;
+  color: #157453;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .bg-container {
+    display: block;
+    width: 90% !important;
+  }
+  .real-contact-form,
+  .contact-form {
+    width: 100% !important;
+  }
+  .contact-form {
+    border-radius: 10px 10px 0 0px !important;
+  }
+  .real-contact-form {
+    border-radius: 0 0 10px 10px !important;
+  }
+  .contact-form::before {
+    display: none;
+  }
+}

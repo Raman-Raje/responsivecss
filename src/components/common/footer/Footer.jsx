@@ -1,37 +1,46 @@
 import React from "react";
-import { Container, Wrapper, Left, Right, TextLine, SocialMediaIcon, Title, RowContainer,SmallTextLine } from "./Footer.style";
-import { FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import { Footer } from "flowbite-react";
+import "./Footer.css";
 
+const StyledFooter = () => {
+  return (
+    <>
+      <Footer container className="footer">
+        <div className="w-full">
+          <div className="grid justify-between w-full sm:flex sm:justify-between md:flex md:grid-cols-1">
+            <div>
+              <Footer.Brand
+                className="text-white font-bold text-2xl brand-name"
+                href="https://flowbite.com"
+                name=""
+              >
+                Medyzer
+              </Footer.Brand>
+            </div>
+            <div className="grid gap-8 ">
+              <Footer.Title className="text-white" title="about" />
+            </div>
+          </div>
+          {/* <Footer.Divider /> */}
+          <div className="w-full sm:flex sm:items-center sm:justify-between">
+            <Footer.Copyright
+              className="text-white"
+              by="Medyzer™"
+              href="#"
+              year={2022}
+            />
+            <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+              <Footer.Icon href="#" icon={BsFacebook} className="text-white" />
+              <Footer.Icon href="#" icon={BsInstagram} className="text-white" />
+              <Footer.Icon href="#" icon={BsTwitter} className="text-white" />
+              <Footer.Icon href="#" icon={BsGithub} className="text-white" />
+            </div>
+          </div>
+        </div>
+      </Footer>
+    </>
+  );
+};
 
-const Footer = () => {
-    return (
-        <Container>
-            <Wrapper>
-                <Left>
-                    <TextLine>Medyzer</TextLine>
-                    <TextLine>Pune, India - 411003</TextLine>
-                    <TextLine>Email: contact@medyzer.com</TextLine>
-                    <SmallTextLine>Copyright 2022 Medyzer Organization. All rights reserved.</SmallTextLine>
-                </Left>
-                <Right>
-                    <RowContainer>
-                        <Title>Socila Media:-</Title>
-                    </RowContainer>
-                    <RowContainer>
-                        <SocialMediaIcon href="#">
-                            <FaTwitter />
-                        </SocialMediaIcon>
-                        <SocialMediaIcon href="#">
-                            <FaLinkedin />
-                        </SocialMediaIcon>
-                        <SocialMediaIcon href="#">
-                            <FaYoutube />
-                        </SocialMediaIcon>
-                    </RowContainer>
-                </Right>
-            </Wrapper>
-        </Container>
-    )
-}
-
-export default Footer
+export default StyledFooter;

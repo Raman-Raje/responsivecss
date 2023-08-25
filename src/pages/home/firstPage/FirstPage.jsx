@@ -1,20 +1,19 @@
-import React from 'react'
-import NavBar from '../../../components/common/navBar/NavBar'
-import Intro from '../../../components/homePage/intro/Intro'
+import React from "react";
+// import NavBar from "../../../components/common/navBar/NavBar";
+// import Intro from "../../../components/homePage/intro/Intro";
 
-import { TopContainer, BottomContainer } from './FirstPage.style'
+import { TopContainer, BottomContainer } from "./FirstPage.style";
+import Carousel from "../../../components/homePage/Carousel/Carousel";
 
 const FirstPage = () => {
-    return (
-        <>
-            <TopContainer>
-                <NavBar buttonName="Sign In" />
-            </TopContainer>
-            <BottomContainer>
-                <Intro />
-            </BottomContainer>
-        </>
-    )
-}
+  return (
+    <>
+      <BottomContainer>
+        {/* <Intro /> */}
+        <Carousel />
+      </BottomContainer>
+    </>
+  );
+};
 
-export default FirstPage
+export default FirstPage;

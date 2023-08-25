@@ -1,0 +1,9 @@
+@media only screen and (max-width: 1000px) {
+  .feature-card {
+    display: block !important;
+  }
+  .feature-card-img {
+    width: 90% !important;
+    margin: auto;
+  }
+}
